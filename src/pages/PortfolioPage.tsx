@@ -57,8 +57,8 @@ export default function PortfolioPage() {
       const sections = [
         "portfolio-about",
         "portfolio-education",
-        "portfolio-projects",
         "portfolio-skills",
+        "portfolio-projects",
         "portfolio-certifications",
         "portfolio-contact"
       ]
@@ -92,8 +92,8 @@ export default function PortfolioPage() {
             {[
               { id: "about", label: "About" },
               { id: "education", label: "Education" },
-              { id: "projects", label: "Projects" },
               { id: "skills", label: "Skills" },
+              { id: "projects", label: "Projects" },
               { id: "certifications", label: "Certifications" },
               { id: "contact", label: "Contact" }
             ].map((item) => (
@@ -129,8 +129,8 @@ export default function PortfolioPage() {
           {[
             { id: "about", label: "About" },
             { id: "education", label: "Education" },
-            { id: "projects", label: "Projects" },
             { id: "skills", label: "Skills" },
+            { id: "projects", label: "Projects" },
             { id: "certifications", label: "Certifications" },
             { id: "contact", label: "Contact" }
           ].map((item) => (
@@ -168,9 +168,9 @@ export default function PortfolioPage() {
           <div className="h-px w-full bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
         </div>
         
-        {/* Projects Section */}
-        <section id="portfolio-projects" className="scroll-mt-28">
-          <ProjectsPage />
+        {/* Skills Section */}
+        <section id="portfolio-skills" className="scroll-mt-28">
+          <SkillsPage />
         </section>
         
         {/* Divider */}
@@ -178,9 +178,9 @@ export default function PortfolioPage() {
           <div className="h-px w-full bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
         </div>
         
-        {/* Skills Section */}
-        <section id="portfolio-skills" className="scroll-mt-28">
-          <SkillsPage />
+        {/* Projects Section */}
+        <section id="portfolio-projects" className="scroll-mt-28">
+          <ProjectsPage />
         </section>
         
         {/* Divider */}
