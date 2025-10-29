@@ -491,6 +491,52 @@ export default function ProjectsPage() {
       ],
       challenges: "Creating a shopping experience that inspires outdoor living transformations, balancing functional BBQ equipment with lifestyle aesthetics, implementing outdoor space planning tools, and curating products that create backyard retreats focused on comfort, style, and connection.",
       outcome: "Successfully launched an outdoor living destination that transforms backyards into retreat-worthy spaces, bringing together BBQ enthusiasts and outdoor living lovers through carefully curated products that facilitate great food, warm gatherings, and meaningful connections."
+    },
+    {
+      title: "Wellness Center",
+      description: "At Wellness Center, we help busy professionals restore energy, sharpen focus, and recover with scientifically-backed wellness tools. Every product is handpicked for proven results and long-term impact. We believe real wellness starts with trust, precision, and daily commitment.",
+      link: "https://wellnesshub360.com/",
+      weblink: "",
+      thumbnail: "Shop13.png",
+      screenshots: ["Shop13.png"],
+      technologies: ["Shopify", "Liquid", "JavaScript", "CSS3", "Shopify Apps"],
+      features: [
+        "Fitness equipment for busy professionals",
+        "Red light therapy products",
+        "Sauna and wellness recovery tools",
+        "Scientifically-backed wellness solutions",
+        "Energy restoration products",
+        "Focus enhancement tools",
+        "Recovery and rejuvenation equipment",
+        "Expert wellness guidance",
+        "Product effectiveness validation",
+        "Professional wellness consultation"
+      ],
+      challenges: "Curating scientifically-backed wellness products that deliver proven results, building trust with busy professionals seeking effective solutions, balancing product education with seamless shopping experience, and positioning wellness as a daily commitment rather than a quick fix.",
+      outcome: "Successfully launched a trusted wellness platform that serves busy professionals with handpicked, science-backed tools for energy restoration, focus enhancement, and recovery—establishing wellness as a practice built on trust, precision, and daily commitment."
+    },
+    {
+      title: "Outdoor Decor Company",
+      description: "We're more than just outdoor furnishings we're curators of ambiance, warmth, and timeless design. Every product we offer, from fire pits to pergolas, is selected for its quality, durability, and ability to transform a space into something memorable. Whether it's a quiet evening at home or a bustling resort patio, we're committed to helping our clients build environments that invite people in and make them want to stay.",
+      link: "https://outdoordecorcompany.com/",
+      weblink: "",
+      thumbnail: "Shop 14.png",
+      screenshots: ["Shop 14.png"],
+      technologies: ["Shopify", "Liquid", "JavaScript", "CSS3", "Shopify API"],
+      features: [
+        "Premium fire pits and outdoor fireplaces",
+        "Elegant pergolas and shade structures",
+        "Curated outdoor furniture collections",
+        "Ambiance and lighting solutions",
+        "Residential and commercial solutions",
+        "Resort-grade patio furnishings",
+        "Quality and durability focus",
+        "Space transformation consultation",
+        "Timeless design curation",
+        "Custom outdoor environment design"
+      ],
+      challenges: "Creating an e-commerce experience that conveys the ambiance and warmth of outdoor spaces through digital means, serving both residential and commercial clients with diverse needs, and curating collections that balance timeless design with practical durability for various environments.",
+      outcome: "Successfully launched a premium outdoor decor platform that positions furnishings as essential elements of ambiance creation, serving both homeowners and resort operators with quality products that transform outdoor spaces into memorable, inviting environments."
     }
     // Add more Shopify projects as needed
   ]
