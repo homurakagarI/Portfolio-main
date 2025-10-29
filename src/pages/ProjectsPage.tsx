@@ -537,6 +537,29 @@ export default function ProjectsPage() {
       ],
       challenges: "Creating an e-commerce experience that conveys the ambiance and warmth of outdoor spaces through digital means, serving both residential and commercial clients with diverse needs, and curating collections that balance timeless design with practical durability for various environments.",
       outcome: "Successfully launched a premium outdoor decor platform that positions furnishings as essential elements of ambiance creation, serving both homeowners and resort operators with quality products that transform outdoor spaces into memorable, inviting environments."
+    },
+    {
+      title: "Smart Tech Haven",
+      description: "At Smart Tech Haven, we believe technology should make life easier, smarter, and more inspiring. Our vision is to create a space where innovation meets everyday living, bringing modern solutions to every home.",
+      link: "https://smarttechhaven.com/",
+      weblink: "",
+      thumbnail: "Shop 15.png",
+      screenshots: ["Shop 15.png"],
+      technologies: ["Shopify", "Liquid", "JavaScript", "CSS3", "Shopify Apps"],
+      features: [
+        "Smart home technology products",
+        "Modern innovation solutions",
+        "Everyday living enhancements",
+        "Tech-enabled lifestyle products",
+        "Home automation systems",
+        "Smart device integration",
+        "User-friendly technology guides",
+        "Product compatibility information",
+        "Smart home consultation",
+        "Installation and setup support"
+      ],
+      challenges: "Making complex smart home technology accessible and understandable for everyday consumers, demonstrating how innovation integrates seamlessly into daily life, and curating products that balance cutting-edge features with practical usability for various home environments.",
+      outcome: "Successfully launched a smart technology platform that bridges the gap between innovation and everyday living, making modern home solutions accessible and inspiring for customers seeking to enhance their lifestyle through technology."
     }
     // Add more Shopify projects as needed
   ]
