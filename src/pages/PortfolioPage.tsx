@@ -41,6 +41,7 @@ function useIntersectionObserver(options = {}, delay = 0) {
 export default function PortfolioPage() {
   const titleSection = useIntersectionObserver({ threshold: 0.1 })
   const [activeSection, setActiveSection] = useState<string>("about")
+  const [isNavOpen, setIsNavOpen] = useState<boolean>(false)
   
   // Function to handle smooth scrolling to sections
   const scrollToSection = (sectionId: string) => {
@@ -86,27 +87,42 @@ export default function PortfolioPage() {
     <div className="relative w-full">
       {/* Fixed navigation sidebar */}
       <div className="fixed top-28 left-4 z-40 hidden xl:block">
-        <div className="p-4 rounded-xl bg-card/80 backdrop-blur-sm border border-primary/30 shadow-lg">
-          <div className="flex flex-col gap-3">
-            <h3 className="font-semibold text-sm mb-2">Navigation</h3>
-            {[
-              { id: "about", label: "About" },
-              { id: "education", label: "Education" },
-              { id: "skills", label: "Skills" },
-              { id: "projects", label: "Projects" },
-              { id: "certifications", label: "Certifications" },
-              { id: "contact", label: "Contact" }
-            ].map((item) => (
-              <Button 
-                key={item.id}
-                variant={activeSection === item.id ? "default" : "ghost"}
-                size="sm"
-                className="justify-start"
-                onClick={() => scrollToSection(`portfolio-${item.id}`)}
-              >
-                {item.label}
-              </Button>
-            ))}
+        <div className="rounded-xl bg-card/80 backdrop-blur-sm border border-primary/30 shadow-lg overflow-hidden">
+          <button
+            onClick={() => setIsNavOpen(!isNavOpen)}
+            className="w-full p-4 flex items-center justify-center hover:bg-accent/50 transition-colors"
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+          
+          <div className={`transition-all duration-300 ease-in-out ${isNavOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'} overflow-hidden`}>
+            <div className="flex flex-col gap-3 p-4 pt-0">
+              {[
+                { id: "about", label: "About" },
+                { id: "education", label: "Education" },
+                { id: "skills", label: "Skills" },
+                { id: "projects", label: "Projects" },
+                { id: "certifications", label: "Certifications" },
+                { id: "contact", label: "Contact" }
+              ].map((item) => (
+                <Button 
+                  key={item.id}
+                  variant={activeSection === item.id ? "default" : "ghost"}
+                  size="sm"
+                  className="justify-start"
+                  onClick={() => scrollToSection(`portfolio-${item.id}`)}
+                >
+                  {item.label}
+                </Button>
+              ))}
+            </div>
           </div>
         </div>
       </div>
