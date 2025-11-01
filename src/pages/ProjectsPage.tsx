@@ -236,7 +236,7 @@ export default function ProjectsPage() {
       link: "https://workshopemporium.com/",
       weblink: "",
       thumbnail: "Shop1.png",
-      screenshots: ["Shop1.png"],
+      screenshots: ["Shop1.png", "Workshop 1.png", "Workshop 2.png", "Workshop 3.png", "Workshop 4.png"],
       technologies: ["Shopify", "Liquid", "JavaScript", "CSS3", "Shopify API"],
       features: [
         "Detailed machine specifications and technical data",
