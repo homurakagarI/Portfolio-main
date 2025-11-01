@@ -257,7 +257,7 @@ export default function ProjectsPage() {
       link: "https://backyardsupplydirect.com/",
       weblink: "",
       thumbnail: "Shop2.png",
-      screenshots: ["Shop2.png"],
+      screenshots: ["Shop2.png", "Backyard 1.png", "Backyard 2.png", "Backyard 3.png", "Backyard 4.png", "Backyard 5.png"],
       technologies: ["Shopify", "Liquid", "JavaScript", "CSS3", "HTML5"],
       features: [
         "Outdoor furniture and decor collections",
