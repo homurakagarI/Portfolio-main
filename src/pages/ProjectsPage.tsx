@@ -278,7 +278,7 @@ export default function ProjectsPage() {
       link: "https://seraphelrecovery.com/",
       weblink: "",
       thumbnail: "Shop3.png",
-      screenshots: ["Shop3.png"],
+      screenshots: ["Shop3.png", "Seraphel 1.png", "Seraphel 3.png", "Seraphel 4.png", "Seraphel 23.png"],
       technologies: ["Shopify", "Liquid", "JavaScript", "CSS3", "Shopify Apps"],
       features: [
         "Red light therapy product catalog",
