@@ -300,7 +300,7 @@ export default function ProjectsPage() {
       link: "https://eliteearthdesigns.com/",
       weblink: "",
       thumbnail: "Shop4.png",
-      screenshots: ["Shop4.png"],
+      screenshots: ["Shop4.png", "Elite1.png", "Elite 2.png", "Elite 3.png", "Elite 4.png", "Elite 5.png", "Elite 6.png"],
       technologies: ["Shopify", "Liquid", "JavaScript", "CSS3", "Third-party APIs"],
       features: [
         "Curated outdoor furniture collections",
