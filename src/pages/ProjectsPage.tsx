@@ -225,6 +225,30 @@ export default function ProjectsPage() {
       ],
       challenges: "The main challenges included designing an efficient database structure for vehicle information, implementing robust search and filtering capabilities, and ensuring the system could handle various types of vehicle data while maintaining fast performance and user-friendly navigation.",
       outcome: "Successfully developed and deployed a functional vehicle information system that provides users with easy access to truck and vehicle data, streamlining the process of vehicle management and information retrieval."
+    },
+    {
+      title: "Elevate Wellness",
+      description: "A modern wellness platform designed to help users elevate their health and well-being journey. The application features a clean, intuitive interface that provides comprehensive wellness resources, personalized recommendations, and tools to track and improve overall health and lifestyle habits.",
+      link: "https://github.com/homurakagarI/elevatewellness-main",
+      weblink: "https://elevatewellness-main.vercel.app/",
+      thumbnail: "Elevate.png",
+      screenshots: [
+        "Elevate 1.png",
+        "Elevate 2.png",
+        "Elevate 3.png",
+        "Elevate 4.png"
+      ],
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Next.js", "Vercel"],
+      features: [
+        "Comprehensive wellness tracking and insights",
+        "Personalized health recommendations",
+        "Modern and intuitive user interface",
+        "Responsive design for all devices",
+        "Interactive wellness dashboard",
+        "Health and lifestyle resources"
+      ],
+      challenges: "The main challenges included creating an engaging user experience that motivates users to maintain healthy habits, implementing intuitive wellness tracking features, and ensuring the platform provides valuable insights while maintaining a clean and accessible design.",
+      outcome: "Successfully launched a wellness platform that helps users take control of their health journey, providing them with the tools and resources needed to elevate their overall well-being and lifestyle."
     }
     // Add more projects as needed
   ]
