@@ -592,6 +592,7 @@ export default function ProjectsPage() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null)
   const [showingProjectPopup, setShowingProjectPopup] = useState(false)
   const [currentTab, setCurrentTab] = useState<"overview" | "details" | "gallery">("overview")
+  const [showAllShopify, setShowAllShopify] = useState(false)
 
   function handleViewProject(project: Project) {
     setSelectedProject(project)
@@ -676,7 +677,7 @@ export default function ProjectsPage() {
           </div>
           
           <div className="grid gap-6 sm:gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            {shopifyProjects.map((project, idx) => {
+            {shopifyProjects.slice(0, 3).map((project, idx) => {
               const itemSection = useIntersectionObserver({ threshold: 0.1 }, 0);
               
               return (
@@ -692,6 +693,52 @@ export default function ProjectsPage() {
               );
             })}
           </div>
+          
+          {/* Expandable section for remaining projects */}
+          <div className={`grid gap-6 sm:gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 overflow-hidden transition-all duration-500 ease-in-out ${
+            showAllShopify ? "max-h-[5000px] opacity-100 mt-6 sm:mt-8" : "max-h-0 opacity-0 mt-0"
+          }`}>
+            {shopifyProjects.slice(3).map((project, idx) => {
+              return (
+                <div 
+                  key={idx + 3} 
+                  className={`transition-all duration-500 transform ${
+                    showAllShopify ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                  }`}
+                  style={{ transitionDelay: showAllShopify ? `${idx * 100}ms` : '0ms' }}
+                >
+                  <ProjectCard project={project} onView={handleViewProject} />
+                </div>
+              );
+            })}
+          </div>
+          
+          {/* View All / View Less Button */}
+          {shopifyProjects.length > 3 && (
+            <div className="flex justify-center mt-8">
+              <Button
+                variant="outline"
+                onClick={() => setShowAllShopify(!showAllShopify)}
+                className="group flex items-center gap-2 px-6 py-2 border-primary/30 hover:border-primary/60 transition-all duration-300"
+              >
+                <span>{showAllShopify ? "Show Less" : `View All ${shopifyProjects.length} Projects`}</span>
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  width="16" 
+                  height="16" 
+                  viewBox="0 0 24 24" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  strokeWidth="2" 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round"
+                  className={`transition-transform duration-300 ${showAllShopify ? "rotate-180" : ""}`}
+                >
+                  <path d="m6 9 6 6 6-6"/>
+                </svg>
+              </Button>
+            </div>
+          )}
         </div>
       </div>
 
